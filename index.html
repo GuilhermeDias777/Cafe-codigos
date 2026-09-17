@@ -1,413 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Café &lt;/&gt; Códigos</title>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Café &lt;/&gt; Códigos</title>
+        <style>
+            .pagina {
+                display: none;
+            }
 
-    <style>
+            .ativa {
+                display: block;
+            }
 
-        body {
-            margin: 0;
-            background-color: #f7efe5;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #2d2118;
-        }
+            body {
+    font-size: 18px;
+}
 
-        header {
-            background-color: #5c3824;
-            color: white;
-            text-align: center;
-            padding: 35px 20px;
-        }
+h1 {
+    font-size: 40px;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 42px;
-        }
+h2 {
+    font-size: 30px;
+}
 
-        header p {
-            color: #ead8c5;
-            font-size: 17px;
-        }
+h3 {
+    font-size: 24px;
+}
 
-        .menu {
-            margin-top: 25px;
-        }
+p {
+    font-size: 18px;
+}
 
-        .menu button {
-            background-color: #8b5e3c;
-            color: white;
-            border: none;
-            padding: 12px 20px;
-            margin: 5px;
-            border-radius: 6px;
-            font-size: 15px;
-            cursor: pointer;
-        }
+li {
+    font-size: 18px;
+}
 
-        .menu button:hover {
-            background-color: #a9714b;
-        }
-
-        main {
-            width: 85%;
-            max-width: 1000px;
-            margin: 35px auto;
-        }
-
-        .pagina {
-            display: none;
-            background-color: white;
-            padding: 30px;
-            border-radius: 12px;
-            border: 1px solid #e2d4c6;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        .ativa {
-            display: block;
-        }
-
-        h2 {
-            color: #6b4028;
-            text-align: center;
-            font-size: 28px;
-            border-bottom: 2px solid #c99a6b;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            color: #8b5e3c;
-            font-size: 22px;
-            margin-top: 30px;
-        }
-
-        p {
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-        ul,
-        ol {
-            font-size: 17px;
-            line-height: 1.7;
-        }
-
-        li {
-            margin-bottom: 6px;
-        }
-
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        .receita {
-            background-color: #fffaf5;
-            padding: 20px;
-            margin-top: 25px;
-            border-radius: 10px;
-            border: 1px solid #ead8c5;
-        }
-
-        .receita img {
-            width: 320px;
-        }
-
-        hr {
-            border: 0;
-            height: 1px;
-            background-color: #c99a6b;
-            margin: 30px 0;
-        }
-
-        footer {
-            background-color: #3d281c;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-    <header>
-
-        <h1>Café &lt;/&gt; Códigos</h1>
-
-        <p>
-            <i>
-                Receitas práticas e um bom café para a pausa perfeita
-                entre uma linha de código e outra.
-            </i>
-        </p>
-
-        <p>
-            <b>Clique nos botões abaixo para navegar entre as páginas:</b>
-        </p>
-
-        <div class="menu">
-
-            <button onclick="mostrarPagina('pag1')">
-                Sobre o Projeto
-            </button>
-
-            <button onclick="mostrarPagina('pag2')">
-                Pausas Favoritas
-            </button>
-
-            <button onclick="mostrarPagina('pag3')">
-                Receitas Práticas
-            </button>
-
-        </div>
-
-    </header>
+button {
+    font-size: 17px;
+}
+                </style>
+    </head>
+    <body bgcolor="#fdf6ec">
+       
 
 
-    <main>
+        <center>
+            <h1>Café &lt;/&gt; Códigos</h1>
+            <p><i>Receitas práticas e um bom café para a pausa perfeita entre uma linha de código e outra.</i></p>
+            <p><b>Clique nos botões abaixo para navegar entre as páginas:</b></p>
+            
+            <p>
+                <button onclick="mostrarPagina('pag1')">Sobre o Projeto</button> | 
+                <button onclick="mostrarPagina('pag2')">Pausas Favoritas</button> | 
+                <button onclick="mostrarPagina('pag3')">Receitas Práticas</button>
+            </p>
+        </center>
 
-        <!-- PÁGINA 1 -->
+        <hr size="3" color="#000000">
 
         <div id="pag1" class="pagina ativa">
-
-            <h2>Sobre o Café &lt;/&gt; Códigos</h2>
-
-            <img
-                src="codigo.jpeg"
-                alt="Ilustração de código"
-                width="350"
-                onerror="this.style.display='none'"
-            >
-
-            <p>
-                Seja muito bem-vindo ao
-                <b>Café &lt;/&gt; Códigos</b>!
-                Este espaço nasceu da união de duas grandes paixões:
-                <b>a culinária e a programação</b>.
-            </p>
-
-            <p>
-                Afinal, programar e cozinhar têm a mesma essência:
-                ambas exigem atenção aos detalhes e o respeito a um
-                algoritmo claro. Um ingrediente fora de hora altera
-                todo o sabor da receita!
-            </p>
-
-            <p>
-                Quem trabalha ou estuda programação sabe que passar
-                horas encarando a tela tentando resolver um
-                <i>bug</i> pode ser exaustivo.
-            </p>
-
-            <p>
-                Às vezes, a melhor solução para um problema no código
-                não é insistir na tela, mas sim levantar da cadeira,
-                passar um café fresquinho e preparar algo gostoso.
-            </p>
-
-            <p>
-                O projeto foi criado por
-                <b>Sabrina</b> e <b>Guilherme</b>
-                como o nosso refúgio para compartilhar receitas rápidas,
-                reconfortantes e descomplicadas, perfeitas para aquele
-                intervalo merecido na rotina de desenvolvimento e estudos.
-            </p>
-
+            <center>
+                <h2>Sobre o Café &lt;/&gt; Códigos</h2>
+                <img src="codigo.jpeg" width="220" height="150">
+            </center>
+            <p>Seja muito bem-vindo ao <b>Café &lt;/&gt; Códigos</b>! Este espaço nasceu da união de duas grandes paixões: <b>a culinária e a programação</b>.</p>
+            <p>Afinal, programar e cozinhar têm a mesma essência: ambas exigem atenção aos detalhes e o respeito a um algoritmo claro. Um ingrediente fora de hora altera todo o sabor da receita!</p>
+            <p>Quem trabalha ou estuda programação sabe que passar horas encarando a tela tentando resolver um <i>bug</i> pode ser exaustivo. Às vezes, a melhor solução para um problema no código não é insistir na tela, mas sim levantar da cadeira, passar um café fresquinho e preparar algo gostoso.</p>
+            <p>O projeto foi criado por <b>Sabrina</b> e <b>Guilherme</b> como o nosso refúgio para compartilhar receitas rápidas, reconfortantes e descomplicadas — perfeitas para aquele intervalo merecido na rotina de desenvolvimento e estudos.</p>
         </div>
-
-
-        <!-- PÁGINA 2 -->
 
         <div id="pag2" class="pagina">
-
-            <h2>Nossas Pausas Favoritas</h2>
-
-            <p>
-                Sabe aquela pausa do café em que você só precisa de algo
-                doce para acompanhar? Separamos os nossos acompanhamentos
-                favoritos para a hora de dar um <i>reset</i> na mente:
-            </p>
-
+            <center>
+                <h2>Nossas Pausas Favoritas</h2>
+            </center>
+            <p>Sabe aquela pausa do café em que você só precisa de algo doce para acompanhar? Separamos os nossos acompanhamentos favoritos para a hora de dar um <i>reset</i> na mente:</p>
             <ul>
-
-                <li>
-                    Bolo de Cenoura com Calda de Chocolate
-                    (Acompanhamento perfeito para café coado)
-                </li>
-
-                <li>
-                    Brigadeiro Rápido de Panela
-                    (Para quando o código finalmente compila sem erros)
-                </li>
-
-                <li>
-                    Beijinho de Coco Prático
-                    (Leve e rápido de fazer)
-                </li>
-
-                <li>
-                    Palha Italiana Crocante
-                    (Ótima para beliscar enquanto estuda)
-                </li>
-
-                <li>
-                    Doce de Leite na Colher
-                    (A dose rápida de açúcar nos dias intensos)
-                </li>
-
+                <li>Bolo de Cenoura com Calda de Chocolate (Acompanhamento perfeito para café coado)</li>
+                <li>Brigadeiro Rápido de Panela (Para quando o código finalmente compila sem erros)</li>
+                <li>Beijinho de Coco Prático (Leve e rápido de fazer)</li>
+                <li>Palha Italiana Crocante (Ótima para beliscar enquanto estuda)</li>
+                <li>Doce de Leite na Colher (A dose rápida de açúcar nos dias intensos)</li>
             </ul>
-
-
-            <h3>Ranking de Combinações com Café</h3>
-
+            <p><b>Ranking de Combinações com Café:</b></p>
             <ol>
-
                 <li>Bolo de Cenoura + Café Express</li>
-
                 <li>Brigadeiro Tradicional + Café Carioca</li>
-
                 <li>Palha Italiana + Café com Leite</li>
-
                 <li>Beijinho de Coco + Chá Preto</li>
-
                 <li>Doce de Leite + Café Puríssimo</li>
-
             </ol>
-
-
-            <img
-                src="cafe.jpeg"
-                alt="Café"
-                width="350"
-                onerror="this.style.display='none'"
-            >
-
+            <center>
+                <img src="cafe.jpeg" width="220" height="150">
+            </center>
         </div>
-
-
-        <!-- PÁGINA 3 -->
 
         <div id="pag3" class="pagina">
+            <center>
+                <h2>Receitas Rápidas para a Pausa do Dev</h2>
+            </center>
+            
+            <h3>1. Bolo de Cenoura Express (Para o Café da Tarde)</h3>
+            <center>
+                <img src="bolo.jpeg" width="200" height="130">
+            </center>
+            <p><b>A Ideia:</b> Um clássico fofinho que você bate tudo no liquidificador em menos de 5 minutos antes de voltar para a IDE.</p>
+            <p><b>Ingredientes:</b> 3 cenouras, 3 ovos, 1/2 xícara de óleo, 2 xícaras de açúcar, 2,5 xícaras de farinha de trigo e 1 colher de fermento em pó.</p>
+            <p><b>Preparo do Dev:</b> Bata as cenouras, ovos e óleo no liquidificador. Adicione o açúcar e bata mais um pouco. Despeje em uma tigela, misture a farinha e por fim o fermento. Leve ao forno a 180°C por 40min. Dica: prepare enquanto lê a documentação!</p>
 
-            <h2>Receitas Rápidas para a Pausa do Dev</h2>
+            <hr>
 
-
-            <div class="receita">
-
-                <h3>
-                    1. Bolo de Cenoura Express
-                    (Para o Café da Tarde)
-                </h3>
-
-                <img
-                    src="bolo.jpeg"
-                    alt="Bolo de cenoura"
-                    onerror="this.style.display='none'"
-                >
-
-                <p>
-                    <b>A Ideia:</b>
-                    Um clássico fofinho que você bate tudo no
-                    liquidificador em menos de 5 minutos antes
-                    de voltar para a IDE.
-                </p>
-
-                <p>
-                    <b>Ingredientes:</b>
-                    3 cenouras, 3 ovos, 1/2 xícara de óleo,
-                    2 xícaras de açúcar, 2,5 xícaras de farinha
-                    de trigo e 1 colher de fermento em pó.
-                </p>
-
-                <p>
-                    <b>Preparo do Dev:</b>
-                    Bata as cenouras, ovos e óleo no liquidificador.
-                    Adicione o açúcar e bata mais um pouco.
-                    Despeje em uma tigela, misture a farinha e
-                    por fim o fermento.
-                    Leve ao forno a 180°C por 40min.
-                    Dica: prepare enquanto lê a documentação!
-                </p>
-
-            </div>
-
-
-            <div class="receita">
-
-                <h3>
-                    2. Brigadeiro de Panela "Sem Bug"
-                </h3>
-
-                <img
-                    src="brigadeiro.jpeg"
-                    alt="Brigadeiro"
-                    onerror="this.style.display='none'"
-                >
-
-                <p>
-                    <b>A Ideia:</b>
-                    A receita mais rápida do Brasil para quando
-                    você precisa de um doce urgente no meio
-                    do expediente.
-                </p>
-
-                <p>
-                    <b>Ingredientes:</b>
-                    1 lata de leite condensado,
-                    3 colheres de chocolate em pó (50%)
-                    e 1 colher de manteiga.
-                </p>
-
-                <p>
-                    <b>Preparo do Dev:</b>
-                    Misture tudo na panela fria para não empelotar.
-                    Leve ao fogo baixo mexendo sem parar até começar
-                    a soltar do fundo.
-                    Pode comer na colher direto do prato assim que
-                    esfriar um pouco!
-                </p>
-
-            </div>
-
+            <h3>2. Brigadeiro de Panela "Sem Bug"</h3>
+            <center>
+                <img src="brigadeiro.jpeg" width="200" height="130">
+            </center>
+            <p><b>A Ideia:</b> A receita mais rápida do Brasil para quando você precisa de um doce urgente no meio do expediente.</p>
+            <p><b>Ingredientes:</b> 1 lata de leite condensado, 3 colheres de chocolate em pó (50%) e 1 colher de manteiga.</p>
+            <p><b>Preparo do Dev:</b> Misture tudo na panela fria para não empelotar. Leve ao fogo baixo mexendo sem parar até começar a soltar do fundo. Pode comer na colher direto do prato assim que esfriar um pouco!</p>
         </div>
 
-    </main>
+        <hr size="3" color="#000000">
 
+        <footer>
+            <center>
+                <p><b>Café &lt;/&gt; Códigos</b> — Desenvolvido por Sabrina & Guilherme.</p>
+            </center>
+        </footer>
 
-    <footer>
+        <script>
+            function mostrarPagina(paginaId) {
+                document.querySelectorAll('.pagina').forEach(function(elemento) {
+                    elemento.classList.remove('ativa');
+                });
 
-        <p>
-            <b>Café &lt;/&gt; Códigos</b>
-            | Desenvolvido por Sabrina & Guilherme.
-        </p>
+                document.getElementById(paginaId).classList.add('ativa');
+            }
+        </script>
 
-    </footer>
-
-
-    <script>
-        function mostrarPagina(paginaId) {
-            document.querySelectorAll('.pagina').forEach(function(elemento) {
-                elemento.classList.remove('ativa');
-            });
-
-            document.getElementById(paginaId).classList.add('ativa');
-        }
-    </script>
-
-</body>
-
+    </body>
 </html>
